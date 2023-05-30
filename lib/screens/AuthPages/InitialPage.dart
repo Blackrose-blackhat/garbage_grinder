@@ -41,10 +41,11 @@ class _InitialPageState extends State<InitialPage> {
             Container(
               child: const Text(
                 'Welcome',
-                style: TextStyle(
-                  fontSize: 27,
-                ),
+                style: TextStyle(fontSize: 27, fontWeight: FontWeight.w500),
               ),
+            ),
+            const SizedBox(
+              height: 28,
             ),
             Container(
               child: const Text(
@@ -69,9 +70,30 @@ class _InitialPageState extends State<InitialPage> {
               ),
               child: const Text(
                 "Getting Started!",
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.white,
+                ),
                 textAlign: TextAlign.center,
               ),
+            ),
+            const SizedBox(
+              height: 29,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text("Already have an Account?"),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 5),
+                  child: const Text(
+                    "Login",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
             ),
             Flexible(
               child: Container(),
