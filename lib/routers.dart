@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:garbage_grinder/screens/help.dart';
-import 'package:garbage_grinder/screens/privacy.dart';
-import 'package:garbage_grinder/screens/aboutUs.dart';
-import 'package:garbage_grinder/screens/contactUs.dart';
-import 'package:garbage_grinder/screens/home.dart';
-import 'package:garbage_grinder/screens/profilePage.dart';
-import 'package:garbage_grinder/screens/settings.dart';
+import 'package:garbage_grinder/screens/AuthPages/InitialPage.dart';
+import 'package:garbage_grinder/screens/MenuScreen/help.dart';
+import 'package:garbage_grinder/screens/MenuScreen/privacy.dart';
+import 'package:garbage_grinder/screens/MenuScreen/aboutUs.dart';
+import 'package:garbage_grinder/screens/MenuScreen/contactUs.dart';
+import 'package:garbage_grinder/screens/homeScreen/home.dart';
+import 'package:garbage_grinder/screens/MenuScreen/profilePage.dart';
+import 'package:garbage_grinder/screens/MenuScreen/settings.dart';
 
 import 'main.dart';
 
@@ -15,6 +16,8 @@ class RouteGenerate {
     final args = settings.arguments;
 
     switch (settings.name) {
+      case InitialPage.routeName:
+        return MaterialPageRoute(builder: ((context) => const InitialPage()));
       case HomePage.routeName:
         return MaterialPageRoute(builder: ((context) => const HomePage()));
       case ProfilePage.routeName:

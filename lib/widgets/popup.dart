@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:garbage_grinder/constants/constant.dart';
+import 'package:garbage_grinder/utils/constant.dart';
 
 Widget buildPopupDialog(BuildContext context) {
   TextStyle? style1 = const TextStyle(

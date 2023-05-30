@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../screens/privacy.dart';
-import '../screens/aboutUs.dart';
-import '../screens/contactUs.dart';
-import '../screens/profilePage.dart';
-import '../screens/settings.dart';
+import '../screens/MenuScreen/privacy.dart';
+import '../screens/MenuScreen/aboutUs.dart';
+import '../screens/MenuScreen/contactUs.dart';
+import '../screens/MenuScreen/profilePage.dart';
+import '../screens/MenuScreen/settings.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});

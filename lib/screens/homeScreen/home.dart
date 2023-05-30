@@ -4,11 +4,11 @@ import 'package:garbage_grinder/screens/homeScreen/store.dart';
 
 import 'package:garbage_grinder/widgets/drawer.dart';
 
-import 'homeScreen/calendar.dart';
-import 'homeScreen/stats.dart';
+import 'calendar.dart';
+import 'stats.dart';
 
 class HomePage extends StatefulWidget {
-  static const routeName = '/';
+  static const routeName = '/home';
   const HomePage({super.key});
 
   @override
